@@ -10,4 +10,4 @@ RUN pip3 install --upgrade pip
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 EXPOSE 8888/tcp
-ENTRYPOINT [ "jupyter", "notebook", "--allow-root", "--ip=0.0.0.0", "--no-browser" ]
+CMD [ "jupyter", "notebook", "--allow-root", "--ip=0.0.0.0", "--no-browser" ]
